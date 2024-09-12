@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em Busca do Tesouro Perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Em uma tarde chuvosa, encontrei um antigo pergaminho escondido entre as páginas de um livro velho na biblioteca. O pergaminho falava sobre um tesouro perdido, escondido em algum lugar remoto e repleto de desafios. Decidi seguir as pistas para encontrar esse tesouro!</p>
+            <button class="btn-proximo" data-proximo="1">São Paulo</button>
+            <button class="btn-proximo" data-proximo="2">Bahia</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você inicia sua busca em São Paulo, visitando o famoso Mercado Municipal em busca da primeira pista.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar pistas no Mercado</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Na Bahia, você explora o Pelourinho. O pergaminho menciona que a próxima pista está em um local histórico da cidade. Onde você vai começar?</p>
+            <button class="btn-proximo" data-proximo="5">Visitar o Museu de Arte</button>
+            <button class="btn-proximo" data-proximo="6">Explorar o Mercado Modelo</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No Mercado Municipal, você encontra uma pista enigmática que indica que o próximo local a ser investigado é o Pantanal.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Pantanal</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desistindo da aventura">
+            <p>Você decide que a busca é muito arriscada e volta para casa. Sempre se perguntando se o tesouro perdido realmente existia.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>No Museu de Arte, você descobre um quadro antigo com uma mensagem secreta que revela a próxima pista no Pantanal.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Pantanal</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Explorando o Mercado Modelo, você encontra uma pista que leva a um beco sem saída, sem maiores revelações.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e visitar o Museu</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>No Pantanal, a aventura se torna ainda mais intrigante. Você se depara com dois caminhos: um através da floresta e outro ao longo de um rio.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pela floresta</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pelo rio</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta ao Museu de Arte, você encontra uma pista adicional que confirma a necessidade de seguir para o Pantanal.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Pantanal</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Seguindo pela floresta, você descobre uma antiga construção coberta de musgo que leva à entrada secreta do tesouro perdido.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar o tesouro perdido</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>O caminho ao longo do rio leva a uma área alagada sem sinais do tesouro, apenas uma bela vista da natureza.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar o caminho da floresta</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-tesouro-perdido.png" alt="descoberta do tesouro perdido na floresta">
+            <p>Você encontra o tesouro perdido, repleto de riquezas e artefatos antigos. Decide que esse é um lugar que deve ser preservado e estudado.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Voltando e escolhendo o caminho da floresta, você encontra finalmente a construção antiga e a entrada secreta para o tesouro perdido.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar o tesouro perdido</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
